@@ -8,17 +8,17 @@
   <title>나만의 웹페이지</title>
 
   <style>
-    table.menubar {
-      display: block;
-      margin-top: 0;
-      border-collapse: collapse;
-      text-align: left;
-      line-height: 1.5;
-      border-bottom: 3px solid #036;
-    }
+  header{
+    height:150px;
 
-    table.menubar thead th {
-      padding: 15px;
+  }
+
+
+     ul li {
+
+      list-style-type: none;
+      display: inline;
+      padding: 20px;
       font-weight: bold;
       font-size: 20px;
       font-family: cursive;
@@ -29,7 +29,6 @@
 
     .outside {
       display: block;
-      
       height: 200px;
       background-color: #eeeeee;
       border: 10px;
@@ -38,21 +37,30 @@
       box-sizing: border-box;
       padding: 0px 5px 5px 5px;
     }
+
   </style>
 
 </head>
 
 <body>
-  <table class="menubar">
-    <thead>
-      <tr>
-        <th>Ko yunseo</th>
-        <th id="th2"><a href="#Profile">Profile</a></th>
-        <th id="th3"><a href="#Hobby">Hobby</th>
-          <th id="th4"><a href="Favorite">Favorite</a></th>
-        <th id="th5"><a href="Etc"></a>Etc</th>
-      </tr>
-    </thead>
+<header>
+  <ul id="menubar">
+
+        <li>Ko yunseo</li>
+        <li id="li2"><a href="#Profile">Profile</a></li>
+        <li id="li3"><a href="#Hobby">Hobby</li>
+          <li id="li4"><a href="Favorite">Favorite</a></li>
+        <li id="li5"><a href="Etc"></a>Etc</li>
+
+    </ul>
+    </header>
+<nav>
+
+
+
+  </nav>
+<article class="article">
+
     <div class="outside" id="Profile">
       sfaf
       <div class="inner">
@@ -64,8 +72,9 @@
       <div class="btn">
 
       </div>
-    </div>
 
+    </div>
+  </article>
 </body>
 
 </html>
