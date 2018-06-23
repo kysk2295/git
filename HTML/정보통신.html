@@ -2,153 +2,166 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>나만의 웹페이지</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>나만의 웹페이지</title>
 
-  <style>
-
-  header{
-
-    padding: 10px;
-    margin-top: 20px;
-    text-decoration-line: none;
-
-  }
-
-  img{
-    display: inline;
-    width: 100px;
-    height: 200px;
-    float: left;
-  }
+    <style>
 
 
+      img{
+        width: 100%;
+        height: 280px;
 
-     ul>li {
-
-      list-style-type: none;
-      display: inline;
-      padding: 20px;
-      font-weight: bold;
-      font-size: 30px;
-      font-family: 궁서체;
-      vertical-align: top;
-      color: #369;
-      text-align: left;
-      text-decoration: none;
-      color: black;
-
-    }
-
-    .container{
-      text-align: right;
-
-    }
-
-
-    .outside {
-      display: block;
-      margin-left: 50px;
-
-      height: 400px;
-      margin-top: 20px;
-      background-color: #eeeeee;
-      border: 10px;
-      border-color: #ffffff;
-      border-style: solid;
-      box-sizing: border-box;
-      padding: 0px 5px 5px 5px;
-      clear: both;
-    }
-
-    span
-    {height:40px; width:40px; display:block; position:relative;}
-
-.demoSpan1{overflow:hidden; height:25px; }
-
-.demoSpan1:before{content:''; height:20px; width:20px;
- display:block; border:5px solid #333; border-left-width:0;
-  border-bottom-width:0; transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);
-  -o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
-   position:absolute; top:7px; left:7px;}
-
-
-   .demoSpan2{overflow:hidden; height:25px;}
-
-   .demoSpan2:before{content:''; height:20px; width:20px;
-    display:block; border:5px solid #333; border-right-width:0;
-     border-top-width:0; transform:rotate(-45deg);
-     -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);
-     -o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
-      position:absolute; bottom:7px; left:7px;}
-      #Profile{
-        background-color: red;
-        float: left;
-      }
-      #Hobby{
-        background-color: blue;
-      }
-      #Favorite{
-        background-color: aqua;
-      }
-      #Etc{
-        background-color: yellow;
       }
 
-  </style>
+
+        hr {
+            margin-top: 30px;
+        }
+
+
+
+        div {
+            display: block;
+            height: 400px;
+            width: 100%;
+            border: 10px;
+            border-color: #ffffff;
+            border-style: solid;
+            box-sizing: border-box;
+            border:0;
+            width:100%;
+
+        }
+        p{
+
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 50%;
+          text-align: center;
+          vertical-align: middle;
+          font-family: 나눔고딕;
+          font-size: 30px;
+
+        }
+
+
+        span {
+            height: 40px;
+            width: 40px;
+            display: block;
+            position: relative;
+        }
+
+        .demoSpan1 {
+            overflow: hidden;
+            height: 25px;
+            left: 50%;
+
+        }
+
+        .demoSpan1:before {
+            content: '';
+            height: 20px;
+            width: 20px;
+            display: block;
+            border: 5px solid #333;
+            border-left-width: 0;
+            border-bottom-width: 0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            position: absolute;
+            top: 7px;
+            left: 7px;
+        }
+
+        .demoSpan2 {
+            margin: auto;
+            overflow: hidden;
+            height: 25px;
+            position: absolute;
+            bottom: 0;
+            left:50%;
+        }
+
+        .demoSpan2:before {
+            content: '';
+            height: 20px;
+            width: 20px;
+            display: block;
+            border: 5px solid #333;
+            border-right-width: 0;
+            border-top-width: 0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            position: absolute;
+            bottom: 7px;
+            left: 7px;
+        }
+
+
+
+    </style>
 
 </head>
 
 <body>
-<header>
-  <ul id="menubar">
+    <header>
+        <ul id="menubar">
 
-        <li id="li1">Ko yunseo</li>
-        <li id="li2" class="container"><a href="#Profile">Profile</a></li>
-        <li id="li3"><a href="#Hobby">Hobby</li>
-          <li id="li4"><a href="#Favorite">Favorite</a></li>
-        <li id="li5"><a href="#Etc">Etc</a></li>
+        <img src="image.jpg" >
 
-    </ul>
-      <hr>
+        </ul>
+
     </header>
+    <hr>
 
-<nav>
-<img src="logo.jpg" alt="">
-  </nav>
+    <article class="article">
+      <div class="outside" id="first">
+        <p>
+      Ko yunseo
+      </p>
+      </div>
 
-<article class="article">
+        <div class="outside" id="Profile">
+          <a href="#Profile"><span class="demoSpan1"></span></a>
+          <p>
+        haha
+        </p>
+        <a href="#Profile"><span class="demoSpan1"></span></a>
+        </div>
+        <div class="outside" id="Hobby">
+            <a href="#Profile"><span class="demoSpan1"></span></a>
+            <p>
+              kys
+            </p>
+            <a href="#Favorite"><span class="demoSpan2"> </span> </a>
 
-    <div class="outside" id="Profile">
-
-      <span class="demoSpan1"></span>
-    <a href="#Hobby"><span class="demoSpan2"> </span> </a>
-
-    </div>
-
-    <div class="outside" id="Hobby">
-      <a href="#Profile"><span class="demoSpan1"></span></a>
-    <a href="#Favorite"><span class="demoSpan2"> </span> </a>
-    </div>
-
-
-    <div class="outside" id="Favorite">
-      <a href="#Hobby"><span class="demoSpan1"></span></a>
-    <a href="#Etc"><span class="demoSpan2"> </span> </a>
-
-    </div>
-
-
-    <div class="outside" id="Etc">
-      <a href="#Favorite"><span class="demoSpan1"></span></a>
-    <a href="#Profile"><span class="demoSpan2"> </span> </a>
-    </div>
+        </div>
 
 
-  </article>
+        <div class="outside" id="Favorite">
+            <a href="#Hobby"><span class="demoSpan1"></span></a>
+            <a href="#Etc"><span class="demoSpan2"> </span> </a>
+
+        </div>
+
+
+        <div class="outside" id="Etc">
+            <a href="#Favorite"><span class="demoSpan1"></span></a>
+            <a href="#Profile"><span class="demoSpan2"> </span> </a>
+        </div>
+
+
+    </article>
 </body>
 
 </html>

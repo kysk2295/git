@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kys</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      background-image: url(img1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100%;
+      height: 600px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: #078196;
+    }
+
+    #Profile {
+      width: 100%;
+      height: 540px;
+      background-color: white;
+    }
+
+    #Hobby {
+      width: 100%;
+      height: 620px;
+      background-color: #E5D85C;
+
+    }
+
+    #Favorite {
+
+      width: 100%;
+      height: 630px;
+      background-color: #ffffff;
+
+
+    }
+
+    footer {
+      margin-top: 40px;
+      width: 100%;
+      height: 200px;
+      background-color: #E4F7BA;
+      position: relative;
+    }
+
+    #comment {
+      margin-top: 40px;
+      width: 100%;
+      height: 300px;
+      background-color: #0054FF;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: #ffffff;
+
+    }
+
+    #all2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #Github {
+      width: 35%;
+      height: 140px;
+      margin-top: 35px;
+      font-family: 'Source Sans Pro';
+    }
+
+    #blog {
+      width: 35%;
+      height: 140px;
+      margin-top: 10px;
+      font-family: 'Source Sans Pro';
+    }
+
+    #github,
+    #blog {
+      font-size: 30px;
+    }
+
+    #all {
+
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      box-sizing: border-box;
+      margin-right: 0;
+      margin-left: 0;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #all p {
+      display: flex;
+      font-family: 'Source Sans Pro';
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      margin-top: 100px;
+    }
+
+    #develop {
+
+      display: block;
+      width: 400px;
+      flex: 0 0 40%;
+      height: 250px;
+      background-image: url(img-portfolio2.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #travel {
+      flex: 0 0 40%;
+      display: block;
+      width: 250px;
+      height: 250px;
+      background-image: url(portfolio3.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+    }
+
+    #dream {
+      flex: 0 0 40%;
+      display: block;
+      width: 250px;
+      height: 250px;
+      background-image: url(dream-job.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+    }
+
+    #food {
+      flex: 0 0 40%;
+      display: block;
+      width: 250px;
+      height: 250px;
+      background-image: url(food2.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #img1 {
+      width: 400px;
+      height: 300px;
+
+    }
+
+    #img2 {
+      width: 400px;
+      height: 300px;
+
+    }
+
+
+    .outside {
+      font-family: 'Source Sans Pro';
+      text-align: center !important;
+      font-weight: 700;
+
+    }
+
+    ul li {
+      margin-top: 15px;
+    }
+
+    #top {
+      font-size: 100px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px
+    }
+
+    #h1sec {
+      font-size: 100px;
+      margin-top: 15px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+    }
+
+    #h1game {
+      font-size: 100px;
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-bottom: 80px;
+      margin-left: 0px;
+    }
+
+    #favorite {
+      font-size: 60px;
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-bottom: 40px;
+      margin-left: 0px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 70px;
+      margin-left: 0px;
+      color: #456F00;
+    }
+
+    #btn1 {
+      font-family: "Times New Roman", "Source Sans Pro";
+      font-size: 1rem;
+      border-radius: .25rem;
+      width: 130px;
+      height: 50px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+      font-weight: 700;
+      background-color: #1d809f !important;
+      border-color: #1d809f !important;
+      color: #fff !important;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+
+    }
+
+    #btn2 {
+      font-family: "Times New Roman", "Source Sans Pro";
+      font-size: 1rem;
+      border-radius: .25rem;
+      width: 130px;
+      height: 50px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+      font-weight: 700;
+      background-color: #1d809f !important;
+      border-color: #1d809f !important;
+      color: #fff !important;
+      margin-top: 15px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+
+    }
+
+    #btn3 {
+      font-family: "Times New Roman", "Source Sans Pro";
+      font-size: 1rem;
+      border-radius: .25rem;
+      width: 130px;
+      height: 50px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+      font-weight: 700;
+      background-color: #1d809f !important;
+      border-color: #1d809f !important;
+      color: #fff !important;
+      margin-top: 25px;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 0px;
+
+    }
+
+    #menubar {
+      background-color: gray;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+
+
+    #menubar ol>li {
+
+      list-style-type: none;
+      display: inline;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #369;
+      text-align: left;
+      text-decoration: none;
+      color: white;
+
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: green;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+
+    <div class="outside">
+      <div id="div1">
+        <h1 id="top">Ko yun seo</h1>
+        <h2>Welcome</h2>
+        <a href="#Profile"><input type="button" name="" value="Find out" id="btn1">
+</a>
+        <div id="menubar">
+          <ol>
+            <li><a href="http://www.sunrint.hs.kr/index.do">Sunrin</a></li>
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#Hobby">Hobby</a></li>
+            <li><a href="#Favorite">Favorite</a></li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <article class="article">
+    <div class="outside" id="Profile">
+      <h1 id="h1sec">Profile</h1>
+      <ul>
+
+        <li>2002년 3월 26일 탄생</li>
+        <li>서울하늘 초등학교 졸업</li>
+        <li>상암중학교 졸업</li>
+        <li>2018년 선린 인터넷고등학교 재학중</li>
+        <li>소프트웨어과</li>
+        <li>동아리 AnA</li>
+        <li>나이 17살</li>
+        <li>서울시 마포구 상암동 거주중</li>
+
+      </ul>
+      <a href="#Hobby"><input type="button" name="" value="Scroll" id="btn2">
+    </a>
+    </div>
+    <div class="outside" id="Hobby">
+      <h1 id="h1game">Games</h1>
+      <div id="img">
+        <a href="http://pubg.game.daum.net/pubg/index.daum"><img src="battle.jpg" alt="배틀그라운드"id="img1" title="battleground"></a>
+        <a href="https://playoverwatch.com/ko-kr/"><img src="overwatch.jpg" alt="오버워치"id="img2" title="overwatch"></a>
+      </div>
+      <a href="#Favorite"><input type="button" name="" value="Scroll" id="btn3">
+</a>
+    </div>
+    <div class="outside" id="Favorite">
+      <h1 id="favorite">Favorite</h1>
+      <div id="all">
+        <div id="develop">
+          <p>개발</p>
+        </div>
+        <div id="travel">
+          <p>여행가기</p>
+        </div>
+        <div id="dream">
+          <p>꿈</p>
+        </div>
+        <div id="food">
+          <p>맜있는 음식 먹기</p>
+        </div>
+      </div>
+    </div>
+    <div class="outside" id="comment">
+      <p>"You can not do your best in the range I think."</p>
+    </div>
+  </article>
+  <footer>
+    <div id="all2">
+      <div id="github"><a href="https://github.com/kysk2295/git"><img src="github.png"
+   alt=""id="Github">Github</a></div>
+      <div id="blog"><a href="https://blog.naver.com/kysk2295"><img src="blog.png"alt=""
+  id="blog">Naver blog
+</a>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>
